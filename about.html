@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hobby scans</title>
+    <link rel="stylesheet" href="style.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/icon.png"</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="library.html">LIBRARY</a></li>
+                    <li><a href="read.html">READ</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+             </div>
+             <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>  
+        <h1>About Me</h1>
+        <p> All information about me are stored in here. </p>   
+</section>
+
+
+
+<!---------About me----------->
+
+
+
+<section class="about">
+    <div class="about-row">
+        <div class="me">
+            <img class="img1" src="Images/me.jpg">
+            <div><div class="about-text"><h2>Who am I?</h2><p> Hello! My name is Mitchell Jhy T. Del Poso, I'm currently studying BSIT in CDSP. I'm a Typesetter in a scanlation group called AniGlitch Scans I mainly handle Manga and occasionally Manhwas. This is what i do in my spare time to make myself busy and to know more about the things that I liked. To read the manga that I worked on you may tap the title of the manga you want in the Read section, in the credits you can see the name Tako as Typesetter. That's my credit name in the group.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ps">
+        <div class="ps-col">
+            <h3>What software do I use?</h3>
+            <p> I use Photoshop CC2019 version it's good enough and much stable than later versions. I also use TypersTool it's a <br>program that increases the productivity because it let's you do some shortcuts. </p>
+            <img class="img2" src="Images/ps.PNG">
+        </div>
+</section>
+
+
+<!--------------Footer------------->
+
+<section class="footer">
+    <h4>Credits</h4>
+    <p> This website is made using VS Code, Google Fonts, Bootstrap, <br>and Special Thanks to my group mates for giving me the permission to use their site.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-youtube"></i>
+        <i class="bi bi-discord"></i>
+        <i class="fa fa-github"></i>
+    </div>
+</section>
+
+
+
+
+
+    <!---------------------JavaScript for toggle menu--------------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
